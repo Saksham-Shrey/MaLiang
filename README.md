@@ -4,6 +4,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/MaLiang.svg?style=flat)](http://cocoapods.org/pods/MaLiang)
 [![Version](https://img.shields.io/cocoapods/v/MaLiang.svg)](http://cocoapods.org/pods/MaLiang)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![SPM compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://swift.org/package-manager/)
 [![Language](https://img.shields.io/badge/language-Swift%205-orange.svg)](https://swift.org)
 [![codebeat badge](https://codebeat.co/badges/438159fd-b5f9-43d4-a1d5-b07ba5e6cf03)](https://codebeat.co/projects/github-com-harley-xk-maliang-metal)
 [![License](https://img.shields.io/cocoapods/l/MaLiang.svg?style=flat)](http://cocoapods.org/pods/MaLiang)
@@ -70,6 +71,23 @@ github "Harley-xk/MaLiang"
 Run `carthage update` to build the framework and drag the built `MaLiang.framework` into your Xcode project.
 
 **Make sure to add `MaLiang.framework` to your target's `Embedded Binaries`**
+
+### Swift Package Manager
+
+To integrate MaLiang into your Xcode project using [Swift Package Manager](https://swift.org/package-manager/), add it to the dependencies in your `Package.swift` file:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/Harley-xk/MaLiang.git", from: "2.9.2")
+]
+```
+
+Alternatively, in Xcode:
+1. Select File > Swift Packages > Add Package Dependency
+2. Enter package repository URL: https://github.com/Harley-xk/MaLiang.git
+3. Confirm the version and let Xcode resolve the package
+
+You can find a complete SPM integration example in the `Example/SPMExample` directory.
 
 ## Usage
 
